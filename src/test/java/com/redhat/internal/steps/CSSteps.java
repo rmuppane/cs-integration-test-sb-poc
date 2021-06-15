@@ -69,7 +69,7 @@ public class CSSteps {
 
     RetryPolicy<Object> retryPolicy = new RetryPolicy<>() //
         .handle(Exception.class) //
-        .withDelay(Duration.ofSeconds(1)) //
+        .withDelay(Duration.ofSeconds(1)) // 
         .withMaxRetries(1);
 
     @Autowired
